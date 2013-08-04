@@ -1,0 +1,16 @@
+h1. Java BOM
+
+p. Bill of material for all Java-based projects. Use it as follows:
+
+bc.  <dependencies>
+    <dependency>
+      <groupId>com.github.sebhoss</groupId>
+      <artifactId>java-bom</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+
+
+"!https://secure.travis-ci.org/sebhoss/java-bom.png!":http://travis-ci.org/sebhoss/java-bom
