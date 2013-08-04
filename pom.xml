@@ -32,6 +32,16 @@
   <description>Bill of material for all Java-based projects</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                  SOURCE                                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <scm>
+    <connection>${scm.connection}</connection>
+    <developerConnection>${scm.developerConnection}</developerConnection>
+    <tag>master</tag>
+    <url>${scm.url}</url>
+  </scm>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
@@ -49,6 +59,12 @@
 
     <version.org.github.sebhoss.common-resources>1.0.0</version.org.github.sebhoss.common-resources>
     <version.org.github.sebhoss.doxia-textile>1.0.0</version.org.github.sebhoss.doxia-textile>
+
+    <github.url>http://github.com/sebhoss/java-bom</github.url>
+    <scm.connection>scm:git:git://github.com/sebhoss/java-bom.git</scm.connection>
+    <scm.developerConnection>scm:git:git@github.com:sebhoss/java-bom.git</scm.developerConnection>
+    <scm.url>http://github.com/sebhoss/java-bom</scm.url>
+    <issueManagement.url>http://github.com/sebhoss/java-bom/issues</issueManagement.url>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
