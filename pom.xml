@@ -44,8 +44,6 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.org.eclipse.tycho>0.18.1</version.org.eclipse.tycho>
-
     <version.com.google.guava>14.0.1</version.com.google.guava>
     <version.com.google.guice>3.0</version.com.google.guice>
     <version.joda-time>2.2</version.joda-time>
@@ -56,9 +54,6 @@
     <version.org.springframework>3.2.3.RELEASE</version.org.springframework>
     <version.hamcrest>1.3</version.hamcrest>
     <version.javax.inject>1</version.javax.inject>
-
-    <version.org.github.sebhoss.common-resources>1.0.1</version.org.github.sebhoss.common-resources>
-    <version.org.github.sebhoss.doxia-textile>1.0.1</version.org.github.sebhoss.doxia-textile>
 
     <github.url>http://github.com/sebhoss/java-bom/</github.url>
     <scm.connection>scm:git:git://github.com/sebhoss/java-bom.git</scm.connection>
@@ -166,21 +161,6 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
         <version>${version.org.springframework}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.doxia</groupId>
-        <artifactId>doxia-module-textile</artifactId>
-        <version>${version.org.github.sebhoss.doxia-textile}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss</groupId>
-        <artifactId>common-resources</artifactId>
-        <version>${version.org.github.sebhoss.common-resources}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-compiler-jdt</artifactId>
-        <version>${version.org.eclipse.tycho}</version>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
