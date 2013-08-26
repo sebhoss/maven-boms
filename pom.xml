@@ -16,7 +16,7 @@
   <parent>
     <groupId>com.github.sebhoss</groupId>
     <artifactId>superpom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -26,7 +26,7 @@
   <version>1.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2013</inceptionYear>
-  <url>${github.url}</url>
+  <url>http://github.com/sebhoss/java-bom</url>
   <name>Java BOM</name>
   <description>Bill of material for all Java-based projects</description>
 
@@ -34,10 +34,10 @@
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
-    <connection>${scm.connection}</connection>
-    <developerConnection>${scm.developerConnection}</developerConnection>
+    <connection>scm:git:git://github.com/sebhoss/java-bom.git</connection>
+    <developerConnection>scm:git:git@github.com:sebhoss/java-bom.git</developerConnection>
     <tag>master</tag>
-    <url>${scm.url}</url>
+    <url>${project.url}</url>
   </scm>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -54,12 +54,6 @@
     <version.org.springframework>3.2.3.RELEASE</version.org.springframework>
     <version.hamcrest>1.3</version.hamcrest>
     <version.javax.inject>1</version.javax.inject>
-
-    <github.url>http://github.com/sebhoss/java-bom/</github.url>
-    <scm.connection>scm:git:git://github.com/sebhoss/java-bom.git</scm.connection>
-    <scm.developerConnection>scm:git:git@github.com:sebhoss/java-bom.git</scm.developerConnection>
-    <scm.url>http://github.com/sebhoss/java-bom</scm.url>
-    <issueManagement.url>http://github.com/sebhoss/java-bom/issues</issueManagement.url>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
