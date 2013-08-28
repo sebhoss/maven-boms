@@ -2,7 +2,8 @@ h1. Java BOM "!https://secure.travis-ci.org/sebhoss/java-bom.png!":http://travis
 
 p. Bill of material for all Java-based projects. Use it as follows:
 
-bc.  <dependencies>
+bc.  <dependencyManagement>
+  <dependencies>
     <dependency>
       <groupId>com.github.sebhoss</groupId>
       <artifactId>java-bom</artifactId>
@@ -11,4 +12,5 @@ bc.  <dependencies>
       <scope>import</scope>
     </dependency>
   </dependencies>
+</dependencyManagement>
 
