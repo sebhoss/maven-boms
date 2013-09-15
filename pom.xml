@@ -45,7 +45,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.com.google.guava>14.0.1</version.com.google.guava>
+    <version.com.google.guava>15.0</version.com.google.guava>
     <version.com.google.guice>3.0</version.com.google.guice>
     <version.joda-time>2.3</version.joda-time>
     <version.junit>4.11</version.junit>
