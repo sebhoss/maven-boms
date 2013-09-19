@@ -1,6 +1,6 @@
 h1. Java BOM "!https://secure.travis-ci.org/sebhoss/java-bom.png!":http://travis-ci.org/sebhoss/java-bom
 
-p. Bill of material for Java-based projects. Use it as follows:
+p. Bill of materials for Java-based projects. Use it as follows:
 
 bc.  <dependencyManagement>
   <dependencies>
