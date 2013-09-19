@@ -31,6 +31,17 @@
   <description>Bill of material for all Java-based projects</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                 MODULES                                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <modules>
+    <module>testing-bom</module>
+    <module>sebhoss-bom</module>
+    <module>base-com</module>
+    <module>doxia-bom</module>
+    <module>spring-bom</module>
+  </modules>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
