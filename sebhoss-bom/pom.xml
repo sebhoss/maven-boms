@@ -31,6 +31,11 @@
     <version.common-annotations>[1.0.0,2.0.0)</version.common-annotations>
     <version.fiscal-year>[1.0.0,2.0.0)</version.fiscal-year>
     <version.datasets>[1.0.0,2.0.0)</version.datasets>
+    <version.finj>[2.0.0,3.0.0)</version.finj>
+    <version.bc-clj>[2.0.0,3.0.0)</version.bc-clj>
+    <version.math-clj>[1.0.0,2.0.0)</version.math-clj>
+    <version.def-clj>[1.0.0,2.0.0)</version.def-clj>
+    <version.bootstrap-clj>[2.0.0,3.0.0)</version.bootstrap-clj>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -38,6 +43,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- Java Projects -->
       <dependency>
         <groupId>com.github.sebhoss</groupId>
         <artifactId>common-annotations</artifactId>
@@ -52,6 +58,33 @@
         <groupId>com.github.sebhoss</groupId>
         <artifactId>datasets</artifactId>
         <version>${version.datasets}</version>
+      </dependency>
+
+      <!-- Clojure Projects -->
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>finj</artifactId>
+        <version>${version.finj}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>bc-clj</artifactId>
+        <version>${version.bc-clj}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>math-clj</artifactId>
+        <version>${version.math-clj}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>def-clj</artifactId>
+        <version>${version.def-clj}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>bootstrap-clj</artifactId>
+        <version>${version.bootstrap-clj}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
