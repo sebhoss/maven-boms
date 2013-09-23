@@ -1,4 +1,4 @@
-h1. Java BOM "!https://secure.travis-ci.org/sebhoss/java-bom.png!":http://travis-ci.org/sebhoss/java-bom
+h1. Maven BOM "!https://secure.travis-ci.org/sebhoss/maven-boms.png!":http://travis-ci.org/sebhoss/maven-boms
 
 p. Bill of materials for Java-based projects. Use it as follows:
 
