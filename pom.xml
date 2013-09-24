@@ -43,6 +43,7 @@
     <module>guice-bom</module>
     <module>wikitext-bom</module>
     <module>clojure-bom</module>
+    <module>javax-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
