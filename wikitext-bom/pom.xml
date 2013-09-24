@@ -46,6 +46,26 @@
         <artifactId>textile-core</artifactId>
         <version>${version.wikitext}</version>
       </dependency>
+      <dependency>
+        <groupId>org.fusesource.wikitext</groupId>
+        <artifactId>twiki-core</artifactId>
+        <version>${version.wikitext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.fusesource.wikitext</groupId>
+        <artifactId>tracwiki-core</artifactId>
+        <version>${version.wikitext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.fusesource.wikitext</groupId>
+        <artifactId>mediawiki-core</artifactId>
+        <version>${version.wikitext}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.fusesource.wikitext</groupId>
+        <artifactId>confluence-core</artifactId>
+        <version>${version.wikitext}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
