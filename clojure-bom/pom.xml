@@ -15,43 +15,40 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <parent>
     <groupId>com.github.sebhoss</groupId>
-    <artifactId>superpom</artifactId>
-    <version>1.0.4</version>
+    <artifactId>maven-boms</artifactId>
+    <version>2.0.1-SNAPSHOT</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <artifactId>maven-boms</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <inceptionYear>2013</inceptionYear>
-  <url>http://github.com/sebhoss/maven-boms</url>
-  <name>Maven BOMs</name>
-  <description>Bill of material for all Maven-based projects</description>
+  <artifactId>clojure-bom</artifactId>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                 MODULES                                 -->
+  <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <modules>
-    <module>testing-bom</module>
-    <module>sebhoss-bom</module>
-    <module>base-bom</module>
-    <module>doxia-bom</module>
-    <module>spring-bom</module>
-    <module>database-bom</module>
-    <module>guice-bom</module>
-    <module>wikitext-bom</module>
-    <module>clojure-bom</module>
-  </modules>
-
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                  SOURCE                                 -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <scm>
-    <connection>scm:git:git://github.com/sebhoss/maven-boms.git</connection>
-    <developerConnection>scm:git:git@github.com:sebhoss/maven-boms.git</developerConnection>
-    <tag>master</tag>
-    <url>${project.url}</url>
-  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.clojure</groupId>
+        <artifactId>clojure</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.clojure</groupId>
+        <artifactId>tools.nrepl</artifactId>
+        <version>0.2.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.clojure</groupId>
+        <artifactId>tools.namespace</artifactId>
+        <version>0.2.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.clojure</groupId>
+        <artifactId>java.classpath</artifactId>
+        <version>0.2.1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
