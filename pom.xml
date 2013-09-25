@@ -44,6 +44,7 @@
     <module>guice-bom</module>
     <module>doxia-bom</module>
     <module>wikitext-bom</module>
+    <module>plexus-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
