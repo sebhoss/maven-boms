@@ -68,7 +68,7 @@
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
-        <artifactId>guice-assistedinject</artifactId>
+        <artifactId>guice-jmx</artifactId>
         <version>${version.com.google.guice}</version>
       </dependency>
     </dependencies>
