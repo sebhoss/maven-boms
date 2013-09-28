@@ -51,6 +51,26 @@
         <artifactId>guice-assistedinject</artifactId>
         <version>${version.com.google.guice}</version>
       </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-throwingproviders</artifactId>
+        <version>${version.com.google.guice}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-assistedinject</artifactId>
+        <version>${version.com.google.guice}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-assistedinject</artifactId>
+        <version>${version.com.google.guice}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-assistedinject</artifactId>
+        <version>${version.com.google.guice}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
