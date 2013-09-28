@@ -71,6 +71,11 @@
         <artifactId>guice-jmx</artifactId>
         <version>${version.com.google.guice}</version>
       </dependency>
+      <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-grapher</artifactId>
+        <version>${version.com.google.guice}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
