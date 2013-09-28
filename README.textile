@@ -22,4 +22,6 @@ p. Replace @${kind}@ with one of the following:
 * testing
 * database
 * doxia
+* wikitext
+* plexus
 * sebhoss
