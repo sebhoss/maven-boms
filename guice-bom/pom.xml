@@ -83,7 +83,7 @@
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
-        <artifactId>guice-grapher</artifactId>
+        <artifactId>guice-spring</artifactId>
         <version>${version.com.google.guice}</version>
       </dependency>
       <dependency>
