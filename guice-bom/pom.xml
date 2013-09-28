@@ -63,7 +63,7 @@
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
-        <artifactId>guice-assistedinject</artifactId>
+        <artifactId>guice-jndi</artifactId>
         <version>${version.com.google.guice}</version>
       </dependency>
       <dependency>
