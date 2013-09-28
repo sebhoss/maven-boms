@@ -28,7 +28,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.com.google.guice>3.0</version.com.google.guice>
+    <version.com.google.guice>4.0-beta</version.com.google.guice>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
