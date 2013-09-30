@@ -31,6 +31,7 @@
     <version.common-annotations>[2.0.0,3.0.0)</version.common-annotations>
     <version.fiscal-year>[1.0.0,2.0.0)</version.fiscal-year>
     <version.datasets>[1.0.0,2.0.0)</version.datasets>
+    <version.reguloj>[2.0.0,3.0.0)</version.reguloj>
     <version.finj>[2.0.0,3.0.0)</version.finj>
     <version.bc-clj>[2.0.0,3.0.0)</version.bc-clj>
     <version.math-clj>[1.0.0,2.0.0)</version.math-clj>
@@ -58,6 +59,11 @@
         <groupId>com.github.sebhoss</groupId>
         <artifactId>datasets</artifactId>
         <version>${version.datasets}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>reguloj</artifactId>
+        <version>${version.reguloj}</version>
       </dependency>
 
       <!-- Clojure Projects -->
