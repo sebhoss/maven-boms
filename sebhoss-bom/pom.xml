@@ -29,7 +29,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.common-annotations>[2.0.0,3.0.0)</version.common-annotations>
+    <version.common-annotations>[3.0.0,4.0.0)</version.common-annotations>
     <version.fiscal-year>[1.0.0,2.0.0)</version.fiscal-year>
     <version.datasets>[1.0.0,2.0.0)</version.datasets>
     <version.reguloj>[2.0.0,3.0.0)</version.reguloj>
