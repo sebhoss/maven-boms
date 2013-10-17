@@ -16,12 +16,15 @@ bc.  <dependencyManagement>
 
 p. Replace @${kind}@ with one of the following:
 
-* base
-* spring
-* guice
-* testing
+* clojure
 * database
 * doxia
-* wikitext
+* guice
+* java
+* javax
+* logging
 * plexus
 * sebhoss
+* spring
+* testing
+* wikitext
