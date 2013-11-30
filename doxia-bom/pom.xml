@@ -29,7 +29,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.org.apache.maven.doxia>1.4</version.org.apache.maven.doxia>
+    <version.org.apache.maven.doxia>1.5</version.org.apache.maven.doxia>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
