@@ -29,7 +29,8 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.common-annotations>[3.0.0,4.0.0)</version.common-annotations>
+    <version.null-analysis>[1.0.0,2.0.0)</version.null-analysis>
+    <version.supress-warnings>[1.0.0,2.0.0)</version.supress-warnings>
     <version.fiscal-year>[1.0.0,2.0.0)</version.fiscal-year>
     <version.datasets>[1.0.0,2.0.0)</version.datasets>
     <version.reguloj>[2.0.0,3.0.0)</version.reguloj>
@@ -48,8 +49,13 @@
       <!-- Java Projects -->
       <dependency>
         <groupId>com.github.sebhoss</groupId>
-        <artifactId>common-annotations</artifactId>
-        <version>${version.common-annotations}</version>
+        <artifactId>null-analysis</artifactId>
+        <version>${version.null-analysis}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss</groupId>
+        <artifactId>supress-warnings</artifactId>
+        <version>${version.supress-warnings}</version>
       </dependency>
       <dependency>
         <groupId>com.github.sebhoss</groupId>
