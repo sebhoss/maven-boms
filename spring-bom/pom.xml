@@ -29,7 +29,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.org.springframework>3.2.5.RELEASE</version.org.springframework>
+    <version.org.springframework>4.0.2.RELEASE</version.org.springframework>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
