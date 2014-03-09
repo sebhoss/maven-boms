@@ -60,6 +60,11 @@
         <artifactId>assertj-core</artifactId>
         <version>1.5.0</version>
       </dependency>
+      <dependency>
+        <groupId>nl.jqno.equalsverifier</groupId>
+        <artifactId>equalsverifier</artifactId>
+        <version>1.4</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
