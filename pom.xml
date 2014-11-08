@@ -41,7 +41,6 @@
     <module>sebhoss-bom</module>
     <module>testing-bom</module>
     <module>database-bom</module>
-    <module>spring-bom</module>
     <module>guice-bom</module>
     <module>doxia-bom</module>
     <module>wikitext-bom</module>
