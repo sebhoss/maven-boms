@@ -29,11 +29,11 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.null-analysis>[1.0.0,2.0.0)</version.null-analysis>
-    <version.supress-warnings>[1.0.0,2.0.0)</version.supress-warnings>
+    <version.null-analysis>[2.0.0,3.0.0)</version.null-analysis>
+    <version.supress-warnings>[2.0.0,3.0.0)</version.supress-warnings>
     <version.fiscal-year>[1.0.0,2.0.0)</version.fiscal-year>
     <version.datasets>[1.0.0,2.0.0)</version.datasets>
-    <version.reguloj>[2.0.0,3.0.0)</version.reguloj>
+    <version.reguloj>[3.0.0,4.0.0)</version.reguloj>
     <version.finj>[2.0.0,3.0.0)</version.finj>
     <version.bc-clj>[2.0.0,3.0.0)</version.bc-clj>
     <version.math-clj>[1.0.0,2.0.0)</version.math-clj>

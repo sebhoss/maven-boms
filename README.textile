@@ -28,3 +28,4 @@ p. Replace @${kind}@ with one of the following:
 * spring
 * testing
 * wikitext
+* camel
