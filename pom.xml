@@ -51,6 +51,7 @@
     <module>pax-bom</module>
     <module>aspect-bom</module>
     <module>jexl-bom</module>
+    <module>juel-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

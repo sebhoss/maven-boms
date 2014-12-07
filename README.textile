@@ -33,3 +33,4 @@ p. Replace @${kind}@ with one of the following:
 * pax
 * aspectj
 * jexl
+* juel
