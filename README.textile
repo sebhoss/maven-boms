@@ -31,3 +31,4 @@ p. Replace @${kind}@ with one of the following:
 * camel
 * paranamer
 * pax
+* aspectj
