@@ -52,6 +52,7 @@
     <module>aspect-bom</module>
     <module>jexl-bom</module>
     <module>juel-bom</module>
+    <module>mvel-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
