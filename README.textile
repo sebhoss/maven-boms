@@ -30,3 +30,4 @@ p. Replace @${kind}@ with one of the following:
 * wikitext
 * camel
 * paranamer
+* pax

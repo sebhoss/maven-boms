@@ -48,6 +48,7 @@
     <module>logging-bom</module>
     <module>camel-bom</module>
     <module>paranamer-bom</module>
+    <module>pax-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
