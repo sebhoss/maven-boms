@@ -53,6 +53,7 @@
     <module>jexl-bom</module>
     <module>juel-bom</module>
     <module>mvel-bom</module>
+    <module>ognl-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
