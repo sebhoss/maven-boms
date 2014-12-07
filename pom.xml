@@ -50,6 +50,7 @@
     <module>paranamer-bom</module>
     <module>pax-bom</module>
     <module>aspect-bom</module>
+    <module>jexl-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
