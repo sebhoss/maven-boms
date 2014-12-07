@@ -47,6 +47,7 @@
     <module>plexus-bom</module>
     <module>logging-bom</module>
     <module>camel-bom</module>
+    <module>paranamer-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
