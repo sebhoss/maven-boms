@@ -55,6 +55,7 @@
     <module>mvel-bom</module>
     <module>ognl-bom</module>
     <module>httpclient-bom</module>
+    <module>json-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

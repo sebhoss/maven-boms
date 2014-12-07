@@ -31,9 +31,10 @@ p. Replace @${kind}@ with one of the following:
 * camel
 * paranamer
 * pax
-* aspectj
+* aspect
 * jexl
 * juel
 * mvel
 * ognl
 * httpclient
+* json
