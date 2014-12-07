@@ -36,3 +36,4 @@ p. Replace @${kind}@ with one of the following:
 * juel
 * mvel
 * ognl
+* httpclient
