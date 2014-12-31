@@ -35,6 +35,11 @@
         <artifactId>h2</artifactId>
         <version>1.4.184</version>
       </dependency>
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>9.3-1102-jdbc41</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
