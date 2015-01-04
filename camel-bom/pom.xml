@@ -16,7 +16,7 @@
   <parent>
     <groupId>com.github.sebhoss.bom</groupId>
     <artifactId>maven-boms</artifactId>
-    <version>3.0.4-SNAPSHOT</version>
+    <version>3.0.4</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
