@@ -23,6 +23,7 @@ p. Replace @${kind}@ with one of the following:
 * java
 * javax
 * logging
+* maven
 * plexus
 * sebhoss
 * spring
