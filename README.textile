@@ -5,7 +5,7 @@ p. Bill of materials for Java-based projects. Use it as follows:
 bc.  <dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>com.github.sebhoss</groupId>
+      <groupId>com.github.sebhoss.bom</groupId>
       <artifactId>${kind}-bom</artifactId>
       <version>${version.bom}</version>
       <type>pom</type>
