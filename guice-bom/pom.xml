@@ -29,7 +29,7 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.com.google.guice>4.0-beta5</version.com.google.guice>
+    <version.com.google.guice>4.0</version.com.google.guice>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
