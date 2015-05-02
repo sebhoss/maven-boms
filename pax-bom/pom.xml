@@ -38,7 +38,7 @@
       <dependency>
         <groupId>org.ops4j.pax.exam</groupId>
         <artifactId>pax-exam-junit4</artifactId>
-        <version>4.4.0</version>
+        <version>4.5.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
