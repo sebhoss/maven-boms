@@ -1,8 +1,12 @@
-h1. Maven BOM "!https://secure.travis-ci.org/sebhoss/maven-boms.png!":http://travis-ci.org/sebhoss/maven-boms "!https://www.ohloh.net/p/maven-boms/widgets/project_thin_badge.gif!":https://www.ohloh.net/p/maven-boms/
+= Maven BOM
 
-p. Bill of materials for Java-based projects. Use it as follows:
+== image:https://secure.travis-ci.org/sebhoss/maven-boms.png["Build Status", link="http://travis-ci.org/sebhoss/maven-boms"] image:https://www.openhub.net/p/maven-boms/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-boms/"]
 
-bc.  <dependencyManagement>
+Bill of materials for Java-based projects. Use it as follows:
+
+[source,xml]
+---
+<dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>com.github.sebhoss.bom</groupId>
@@ -13,8 +17,9 @@ bc.  <dependencyManagement>
     </dependency>
   </dependencies>
 </dependencyManagement>
+---
 
-p. Replace @${kind}@ with one of the following:
+Replace `${kind}` with one of the following:
 
 * clojure
 * database
