@@ -1,5 +1,7 @@
+target/
 .settings/
+.idea/
 .project
 .classpath
 .pmd
-target/
+*.iml
