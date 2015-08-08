@@ -2,7 +2,7 @@
 
 == image:https://img.shields.io/maven-central/v/com.github.sebhoss.bom/maven-boms.svg?style=flat-square["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.sebhoss.bom/maven-boms"] image:https://secure.travis-ci.org/sebhoss/maven-boms.png["Build Status", link="http://travis-ci.org/sebhoss/maven-boms"] image:https://www.openhub.net/p/maven-bom/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-bom/"]
 
-Bill of materials for Java-based projects. Use it as follows:
+Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as follows:
 
 [source,xml]
 ---
