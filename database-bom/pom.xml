@@ -46,6 +46,15 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.h2>1.4.190</version.h2>
+    <version.postgres>9.4-1204-jdbc42</version.postgres>
+    <version.mysql>5.1.37</version.mysql>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -54,21 +63,21 @@
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
-        <version>1.4.190</version>
+        <version>${version.h2}</version>
       </dependency>
 
       <!-- PostgreSQL -->
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>9.4-1204-jdbc42</version>
+        <version>${version.postgres}</version>
       </dependency>
 
       <!-- MySQL -->
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.37</version>
+        <version>${version.mysql}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

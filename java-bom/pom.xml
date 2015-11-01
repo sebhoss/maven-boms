@@ -46,6 +46,15 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.cal10n>0.8.1</version.cal10n>
+    <version.jsr305>3.0.1</version.jsr305>
+    <version.jdt.annotations>2.0.0</version.jdt.annotations>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -53,17 +62,17 @@
       <dependency>
         <groupId>ch.qos.cal10n</groupId>
         <artifactId>cal10n-api</artifactId>
-        <version>0.8.1</version>
+        <version>${version.cal10n}</version>
       </dependency>
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
-        <version>3.0.1</version>
+        <version>${version.jsr305}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jdt</groupId>
         <artifactId>org.eclipse.jdt.annotation</artifactId>
-        <version>2.0.0</version>
+        <version>${version.jdt.annotations}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

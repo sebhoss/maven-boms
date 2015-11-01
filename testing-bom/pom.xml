@@ -46,6 +46,20 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.junit>4.12</version.junit>
+    <version.hamcrest-all>1.3</version.hamcrest-all>
+    <version.hamcrest-core>1.3</version.hamcrest-core>
+    <version.mockito-core>1.10.19</version.mockito-core>
+    <version.dbunit>2.5.1</version.dbunit>
+    <version.fest-assert-core>2.0M10</version.fest-assert-core>
+    <version.assertj-core>3.2.0</version.assertj-core>
+    <version.equalsverifier>1.7.5</version.equalsverifier>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -53,42 +67,42 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>${version.junit}</version>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
-        <version>1.3</version>
+        <version>${version.hamcrest-all}</version>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-core</artifactId>
-        <version>1.3</version>
+        <version>${version.hamcrest-core}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>1.10.19</version>
+        <version>${mockito-core}</version>
       </dependency>
       <dependency>
         <groupId>org.dbunit</groupId>
         <artifactId>dbunit</artifactId>
-        <version>2.5.1</version>
+        <version>${version.dbunit}</version>
       </dependency>
       <dependency>
         <groupId>org.easytesting</groupId>
         <artifactId>fest-assert-core</artifactId>
-        <version>2.0M10</version>
+        <version>${version.fest-assert-core}</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
-        <version>3.2.0</version>
+        <version>${version.assertj-core}</version>
       </dependency>
       <dependency>
         <groupId>nl.jqno.equalsverifier</groupId>
         <artifactId>equalsverifier</artifactId>
-        <version>1.7.5</version>
+        <version>${version.equalsverifier}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

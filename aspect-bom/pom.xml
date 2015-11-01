@@ -46,6 +46,14 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.aopalliance>1.0</version.aopalliance>
+    <version.aspectjweaver>1.8.7</version.aspectjweaver>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -53,12 +61,12 @@
       <dependency>
         <groupId>aopalliance</groupId>
         <artifactId>aopalliance</artifactId>
-        <version>1.0</version>
+        <version>${version.aopalliance}</version>
       </dependency>
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
-        <version>1.8.7</version>
+        <version>${version.aspectjweaver}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -46,6 +46,16 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.clojure>1.7.0</version.clojure>
+    <version.tools.nrepl>0.2.12</version.tools.nrepl>
+    <version.tools.namespace>0.2.11</version.tools.namespace>
+    <version.java.classpath>0.2.2</version.java.classpath>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -53,22 +63,22 @@
       <dependency>
         <groupId>org.clojure</groupId>
         <artifactId>clojure</artifactId>
-        <version>1.7.0</version>
+        <version>${version.clojure}</version>
       </dependency>
       <dependency>
         <groupId>org.clojure</groupId>
         <artifactId>tools.nrepl</artifactId>
-        <version>0.2.12</version>
+        <version>${version.tools.nrepl}</version>
       </dependency>
       <dependency>
         <groupId>org.clojure</groupId>
         <artifactId>tools.namespace</artifactId>
-        <version>0.2.11</version>
+        <version>${version.tools.namespace}</version>
       </dependency>
       <dependency>
         <groupId>org.clojure</groupId>
         <artifactId>java.classpath</artifactId>
-        <version>0.2.2</version>
+        <version>${version.java.classpath}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
