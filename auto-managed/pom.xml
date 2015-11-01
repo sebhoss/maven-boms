@@ -50,6 +50,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- internally managed -->
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>aspect-bom</artifactId>
@@ -201,6 +202,22 @@
         <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>wikitext-bom</artifactId>
         <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- externally managed -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>4.2.2.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.integration</groupId>
+        <artifactId>spring-integration-bom</artifactId>
+        <version>4.2.1.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
