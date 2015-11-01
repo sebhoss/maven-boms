@@ -21,7 +21,9 @@ display-property-updates:
 	@mvn versions:display-property-updates
 
 sonar-analysis:
-	@mvn sonar:sonar -Dsonar.host.url=http://localhost:51000 -Dsonar.jdbc.url=jdbc:postgresql://localhost:51100/sonar
+	# http://docs.sonarqube.org/display/SONAR/Analyzing+with+Maven
+	@mvn clean install
+	@mvn sonar:sonar -Dsonar.host.url=http://localhost:59000 -Dsonar.jdbc.url=jdbc:h2:tcp://localhost:59100/sonar
 
 sign-waiver:
 	@gpg --no-version --armor --sign AUTHORS/WAIVER
