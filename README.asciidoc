@@ -21,25 +21,26 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as 
 
 Replace `${kind}` with one of the following:
 
-* aspect
-* camel
-* clojure
-* database
-* doxia
-* guice
-* httpclient
-* java
-* javax
-* jexl
-* json
-* juel
-* logging
-* maven
-* mvel
-* ognl
-* pax
-* paranamer
-* plexus
-* sebhoss
-* testing
-* wikitext
+* https://github.com/sebhoss/maven-boms/blob/master/aspect-bom/pom.xml[aspect]
+* https://github.com/sebhoss/maven-boms/blob/master/camel-bom/pom.xml[camel]
+* https://github.com/sebhoss/maven-boms/blob/master/clojure-bom/pom.xml[clojure]
+* https://github.com/sebhoss/maven-boms/blob/master/database-bom/pom.xml[database]
+* https://github.com/sebhoss/maven-boms/blob/master/doxia-bom/pom.xml[doxia]
+* https://github.com/sebhoss/maven-boms/blob/master/guice-bom/pom.xml[guice]
+* https://github.com/sebhoss/maven-boms/blob/master/httpclient-bom/pom.xml[httpclient]
+* https://github.com/sebhoss/maven-boms/blob/master/java-bom/pom.xml[java]
+* https://github.com/sebhoss/maven-boms/blob/master/javax-bom/pom.xml[javax]
+* https://github.com/sebhoss/maven-boms/blob/master/jexl-bom/pom.xml[jexl]
+* https://github.com/sebhoss/maven-boms/blob/master/json-bom/pom.xml[json]
+* https://github.com/sebhoss/maven-boms/blob/master/juel-bom/pom.xml[juel]
+* https://github.com/sebhoss/maven-boms/blob/master/logging-bom/pom.xml[logging]
+* https://github.com/sebhoss/maven-boms/blob/master/maven-bom/pom.xml[maven]
+* https://github.com/sebhoss/maven-boms/blob/master/mvel-bom/pom.xml[mvel]
+* https://github.com/sebhoss/maven-boms/blob/master/ognl-bom/pom.xml[ognl]
+* https://github.com/sebhoss/maven-boms/blob/master/pax-bom/pom.xml[pax]
+* https://github.com/sebhoss/maven-boms/blob/master/paranamer-bom/pom.xml[paranamer]
+* https://github.com/sebhoss/maven-boms/blob/master/plexus-bom/pom.xml[plexus]
+* https://github.com/sebhoss/maven-boms/blob/master/sebhoss-bom/pom.xml[sebhoss]
+* https://github.com/sebhoss/maven-boms/blob/master/testing-bom/pom.xml[testing]
+* https://github.com/sebhoss/maven-boms/blob/master/wikitext-bom/pom.xml[wikitext]
+
