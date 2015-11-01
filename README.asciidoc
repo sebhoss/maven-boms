@@ -5,7 +5,24 @@ image:https://img.shields.io/travis/sebhoss/maven-boms/master.svg?style=flat-squ
 image:https://www.openhub.net/p/maven-bom/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-bom/"]
 image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/sebhoss/maven-boms"]
 
-Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as follows:
+Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all managed dependencies like this:
+
+[source,xml]
+----
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.github.sebhoss.bom</groupId>
+      <artifactId>auto-managed</artifactId>
+      <version>${version.bom}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+----
+
+Or import only a specific kind(s) of BOM(s) into your project like this:
 
 [source,xml]
 ----
@@ -22,28 +39,125 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as 
 </dependencyManagement>
 ----
 
-Replace `${kind}` with one of the following:
+Replace `${version.bom}` with http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.sebhoss.bom%22%20a%3A%22maven-boms%22[the latest release]. Artifacts are versioned using the date they are built.
+
+Possible values for `${kind}` and the dependencies they manage is as follows:
 
 * https://github.com/sebhoss/maven-boms/blob/master/aspect-bom/pom.xml[aspect]
+** _aopalliance:aopalliance_
+** _org.aspectj:aspectjweaver_
 * https://github.com/sebhoss/maven-boms/blob/master/camel-bom/pom.xml[camel]
+** _org.apache.camel:camel-core_
+** _org.apache.camel:camel-context_
+** _org.apache.camel:camel-spring_
+** _org.apache.camel:camel-jdbc_
+** _org.apache.camel:camel-sql_
+** _org.apache.camel:camel-test_
+** _org.apache.camel:camel-test-spring_
+** _org.apache.camel:camel-spring-javaconfig_
+** _org.apache.camel:camel-spring-boot_
+** _org.apache.camel:camel-metrics_
+** _org.apache.camel:camel-docker_
+** _org.apache.camel:camel-exec_
+** _org.apache.camel:camel-irc_
+** _org.apache.camel:camel-jetty_
+** _org.apache.camel:camel-jmx_
+** _org.apache.camel:camel-jms_
+** _org.apache.camel:camel-mqtt_
+** _org.apache.camel:camel-mail_
+** _org.apache.camel:camel-ssh_
 * https://github.com/sebhoss/maven-boms/blob/master/clojure-bom/pom.xml[clojure]
+** _org.clojure:clojure_
+** _org.clojure:tools.nrepl_
+** _org.clojure:tools.namespace_
+** _org.clojure:java.classpath_
 * https://github.com/sebhoss/maven-boms/blob/master/database-bom/pom.xml[database]
-* https://github.com/sebhoss/maven-boms/blob/master/doxia-bom/pom.xml[doxia]
-* https://github.com/sebhoss/maven-boms/blob/master/guice-bom/pom.xml[guice]
+** _com.h2database:h2_
+** _org.postgresql:postgresql_
+** _mysql:mysql-connector-java_
+* https://github.com/sebhoss/maven-boms/blob/master/google-bom/pom.xml[google]
+** _com.google.auto.value:auto-value_
+** _com.google.guava:guava_
 * https://github.com/sebhoss/maven-boms/blob/master/httpclient-bom/pom.xml[httpclient]
+** _org.apache.httpcomponents:httpcore_
+** _org.apache.httpcomponents:fluent-hc_
 * https://github.com/sebhoss/maven-boms/blob/master/java-bom/pom.xml[java]
+** _ch.qos.cal10n:cal10n-api_
+** _com.google.code.findbugs:jsr305_
+** _org.eclipse.jdt:org.eclipse.jdt.annotation_
 * https://github.com/sebhoss/maven-boms/blob/master/javax-bom/pom.xml[javax]
-* https://github.com/sebhoss/maven-boms/blob/master/jexl-bom/pom.xml[jexl]
+** _javax.inject:javax.inject_
+** _javax.enterprise:cdi-api_
+** _javax.interceptor:javax.interceptor-api_
+** _javax.transaction:jta_
+** _javax.el:javax.el-api_
+** _org.glassfish:javax.el_
 * https://github.com/sebhoss/maven-boms/blob/master/json-bom/pom.xml[json]
-* https://github.com/sebhoss/maven-boms/blob/master/juel-bom/pom.xml[juel]
+** _com.googlecode.json-simple:json-simple_
 * https://github.com/sebhoss/maven-boms/blob/master/logging-bom/pom.xml[logging]
+** _ch.qos.logback:logback-core_
+** _ch.qos.logback:logback-classic_
+** _org.slf4j:slf4j-api_
+** _org.slf4j:jul-to-slf4j_
 * https://github.com/sebhoss/maven-boms/blob/master/maven-bom/pom.xml[maven]
-* https://github.com/sebhoss/maven-boms/blob/master/mvel-bom/pom.xml[mvel]
-* https://github.com/sebhoss/maven-boms/blob/master/ognl-bom/pom.xml[ognl]
-* https://github.com/sebhoss/maven-boms/blob/master/pax-bom/pom.xml[pax]
+** _org.apache.maven:maven-core_
+** _org.apache.maven:maven-model_
+** _org.apache.maven.plugin-tools:maven-plugin-annotations_
+** _org.codehaus.plexus:plexus-component-annotations_
+** _org.apache.maven.doxia:doxia-core_
+** _org.apache.maven.doxia:doxia-core:test-jar_
+** _org.apache.maven.doxia:doxia-sink-api_
 * https://github.com/sebhoss/maven-boms/blob/master/paranamer-bom/pom.xml[paranamer]
-* https://github.com/sebhoss/maven-boms/blob/master/plexus-bom/pom.xml[plexus]
+** _com.thoughtworks.paranamer:paranamer_
+* https://github.com/sebhoss/maven-boms/blob/master/pax-bom/pom.xml[pax]
+** _org.ops4j.pax.exam:pax-exam_
+** _org.ops4j.pax.exam:pax-exam-container-openwebbeans_
+** _org.ops4j.pax.exam:pax-exam-container-weld_
+** _org.ops4j.pax.exam:pax-exam-container-glassfish-embedded_
+** _org.ops4j.pax.exam:pax-exam-container-karaf_
+** _org.ops4j.pax.exam:pax-exam-inject_
+** _org.ops4j.pax.exam:pax-exam-spring_
+** _org.ops4j.pax.exam:pax-exam-cdi_
+** _org.ops4j.pax.exam:pax-exam-junit4_
+* https://github.com/sebhoss/maven-boms/blob/master/scripting-bom/pom.xml[scripting]
+** _org.apache.commons:commons-jexl_
+** _de.odysseus.juel:juel-api_
+** _de.odysseus.juel:juel-impl_
+** _org.mvel:mvel2_
+** _ognl:ognl_
 * https://github.com/sebhoss/maven-boms/blob/master/sebhoss-bom/pom.xml[sebhoss]
+** _com.github.sebhoss:null-analysis_
+** _com.github.sebhoss:suppress-warnings_
+** _com.github.sebhoss:fiscal-year_
+** _com.github.sebhoss:datasets_
+** _com.github.sebhoss:reguloj_
+** _com.github.sebhoss:finj_
+** _com.github.sebhoss:bc-clj_
+** _com.github.sebhoss:math-clj_
+** _com.github.sebhoss:def-clj_
+** _com.github.sebhoss:bootstrap-clj_
+* https://github.com/sebhoss/maven-boms/blob/master/square-bom/pom.xml[square]
+** _com.squareup.okhttp:okhttp_
+** _com.squareup.okhttp:okhttp-apache_
+** _com.squareup.okhttp:okhttp-android-support_
+** _com.squareup.okhttp:okhttp-urlconnection_
+** _com.squareup.okhttp:okhttp-mockwebserver_
+** _com.squareup.okhttp:okhttp-ws_
+** _com.squareup.okhttp:okhttp-testing-support_
+** _com.squareup.okhttp:okcurl_
 * https://github.com/sebhoss/maven-boms/blob/master/testing-bom/pom.xml[testing]
+** _junit:junit_
+** _org.hamcrest:hamcrest-all_
+** _org.hamcrest:hamcrest-core_
+** _org.mockito:mockito-core_
+** _org.dbunit:dbunit_
+** _org.easytesting:fest-assert-core_
+** _org.assertj:assertj-core_
+** _nl.jqno.equalsverifier:equalsverifier_
 * https://github.com/sebhoss/maven-boms/blob/master/wikitext-bom/pom.xml[wikitext]
-
+** _org.fusesource.wikitext:wikitext-core_
+** _org.fusesource.wikitext:textile-core_
+** _org.fusesource.wikitext:twiki-core_
+** _org.fusesource.wikitext:tracwiki-core_
+** _org.fusesource.wikitext:mediawiki-core_
+** _org.fusesource.wikitext:confluence-core_

@@ -46,19 +46,62 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.pax.exam>4.6.0</version.pax.exam>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- Pax Exam -->
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
       <dependency>
         <groupId>org.ops4j.pax.exam</groupId>
         <artifactId>pax-exam-container-openwebbeans</artifactId>
-        <version>4.6.0</version>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-container-weld</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-container-glassfish-embedded</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-container-karaf</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-inject</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-spring</artifactId>
+        <version>${version.pax.exam}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.exam</groupId>
+        <artifactId>pax-exam-cdi</artifactId>
+        <version>${version.pax.exam}</version>
       </dependency>
       <dependency>
         <groupId>org.ops4j.pax.exam</groupId>
         <artifactId>pax-exam-junit4</artifactId>
-        <version>4.6.0</version>
+        <version>${version.pax.exam}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

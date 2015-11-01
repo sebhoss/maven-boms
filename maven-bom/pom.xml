@@ -50,6 +50,9 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.maven>3.3.3</version.maven>
+    <version.maven-annotations>3.4</version.maven-annotations>
+    <version.plexus-annotations>1.6</version.plexus-annotations>
+    <version.doxia>1.6</version.doxia>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -57,6 +60,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- Maven -->
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-core</artifactId>
@@ -70,7 +74,32 @@
       <dependency>
         <groupId>org.apache.maven.plugin-tools</groupId>
         <artifactId>maven-plugin-annotations</artifactId>
-        <version>3.4</version>
+        <version>${version.maven-annotations}</version>
+      </dependency>
+
+      <!-- Plexus -->
+      <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-component-annotations</artifactId>
+        <version>${version.plexus-annotations}</version>
+      </dependency>
+
+      <!-- Doxia -->
+      <dependency>
+        <groupId>org.apache.maven.doxia</groupId>
+        <artifactId>doxia-core</artifactId>
+        <version>${version.doxia}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.doxia</groupId>
+        <artifactId>doxia-sink-api</artifactId>
+        <version>${version.doxia}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.doxia</groupId>
+        <artifactId>doxia-core</artifactId>
+        <version>${version.doxia}</version>
+        <type>test-jar</type>
       </dependency>
     </dependencies>
   </dependencyManagement>

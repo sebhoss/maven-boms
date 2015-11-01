@@ -42,14 +42,17 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <artifactId>guice-bom</artifactId>
+  <artifactId>google-bom</artifactId>
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.com.google.guice>4.0</version.com.google.guice>
+    <version.auto-value>1.1</version.auto-value>
+    <version.guava>18.0</version.guava>
+    <version.guice>4.0</version.guice>
+    <version.truth>0.27</version.truth>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -57,60 +60,82 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- Auto-Value -->
+      <dependency>
+        <groupId>com.google.auto.value</groupId>
+        <artifactId>auto-value</artifactId>
+        <version>${version.auto-value}</version>
+      </dependency>
+
+      <!-- Guava -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${version.guava}</version>
+      </dependency>
+
+      <!-- Guice -->
       <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-multibindings</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-assistedinject</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-throwingproviders</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-persist</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-jndi</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-jmx</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-grapher</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-struts2</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-spring</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-servlet</artifactId>
-        <version>${version.com.google.guice}</version>
+        <version>${version.guice}</version>
+      </dependency>
+
+      <!-- Truth -->
+      <dependency>
+        <groupId>com.google.truth</groupId>
+        <artifactId>truth</artifactId>
+        <version>${version.truth}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

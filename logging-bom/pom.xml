@@ -58,6 +58,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- Logback -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
@@ -68,6 +69,8 @@
         <artifactId>logback-classic</artifactId>
         <version>${version.logback}</version>
       </dependency>
+
+      <!-- SLF4J -->
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>

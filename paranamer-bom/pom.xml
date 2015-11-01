@@ -46,6 +46,13 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.paranamer>2.8</version.paranamer>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
@@ -53,7 +60,7 @@
       <dependency>
         <groupId>com.thoughtworks.paranamer</groupId>
         <artifactId>paranamer</artifactId>
-        <version>2.8</version>
+        <version>${version.paranamer}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

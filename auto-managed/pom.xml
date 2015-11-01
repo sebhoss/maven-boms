@@ -46,10 +46,34 @@
   <packaging>pom</packaging>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.spring>4.2.2.RELEASE</version.spring>
+    <version.spring.integration>4.2.1.RELEASE</version.spring.integration>
+  </properties>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- externally managed -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>${version.spring}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.integration</groupId>
+        <artifactId>spring-integration-bom</artifactId>
+        <version>${version.spring.integration}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <!-- internally managed -->
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
@@ -81,14 +105,7 @@
       </dependency>
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>doxia-bom</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>guice-bom</artifactId>
+        <artifactId>google-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -116,21 +133,7 @@
       </dependency>
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>jexl-bom</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>json-bom</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>juel-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -151,20 +154,6 @@
       </dependency>
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>mvel-bom</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>ognl-bom</artifactId>
-        <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>paranamer-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
@@ -179,7 +168,7 @@
       </dependency>
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
-        <artifactId>plexus-bom</artifactId>
+        <artifactId>scripting-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -187,6 +176,13 @@
       <dependency>
         <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>sebhoss-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.github.sebhoss.bom</groupId>
+        <artifactId>square-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -202,22 +198,6 @@
         <groupId>com.github.sebhoss.bom</groupId>
         <artifactId>wikitext-bom</artifactId>
         <version>${project.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <!-- externally managed -->
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-framework-bom</artifactId>
-        <version>4.2.2.RELEASE</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.integration</groupId>
-        <artifactId>spring-integration-bom</artifactId>
-        <version>4.2.1.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

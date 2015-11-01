@@ -42,8 +42,15 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <artifactId>juel-bom</artifactId>
+  <artifactId>square-bom</artifactId>
   <packaging>pom</packaging>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                PROPERTIES                               -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <properties>
+    <version.okhttp>2.5.0</version.okhttp>
+  </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               DEPENDENCIES                              -->
@@ -51,14 +58,44 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>de.odysseus.juel</groupId>
-        <artifactId>juel-api</artifactId>
-        <version>2.2.7</version>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>${version.okhttp}</version>
       </dependency>
       <dependency>
-        <groupId>de.odysseus.juel</groupId>
-        <artifactId>juel-impl</artifactId>
-        <version>2.2.7</version>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-apache</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-android-support</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-urlconnection</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-mockwebserver</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-ws</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okhttp-testing-support</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp</groupId>
+        <artifactId>okcurl</artifactId>
+        <version>${version.okhttp}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

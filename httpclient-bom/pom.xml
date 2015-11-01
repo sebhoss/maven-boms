@@ -49,7 +49,8 @@
   <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
-    <version.okhttp>2.5.0</version.okhttp>
+    <version.httpcore>4.4.4</version.httpcore>
+    <version.fluent-hc>4.5.1</version.fluent-hc>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -57,58 +58,15 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
-      <!-- Apache HttpClient -->
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
-        <version>4.4.4</version>
+        <version>${version.httpcore}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>fluent-hc</artifactId>
-        <version>4.5.1</version>
-      </dependency>
-
-      <!-- Square OkHttp -->
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-apache</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-android-support</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-urlconnection</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-mockwebserver</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-ws</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okhttp-testing-support</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp</groupId>
-        <artifactId>okcurl</artifactId>
-        <version>${version.okhttp}</version>
+        <version>${version.fluent-hc}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

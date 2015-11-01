@@ -86,11 +86,6 @@
         <version>3.2.0</version>
       </dependency>
       <dependency>
-        <groupId>com.google.truth</groupId>
-        <artifactId>truth</artifactId>
-        <version>0.27</version>
-      </dependency>
-      <dependency>
         <groupId>nl.jqno.equalsverifier</groupId>
         <artifactId>equalsverifier</artifactId>
         <version>1.7.5</version>

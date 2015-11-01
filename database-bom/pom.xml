@@ -50,15 +50,25 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- H2 -->
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>1.4.190</version>
       </dependency>
+
+      <!-- PostgreSQL -->
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
         <version>9.4-1204-jdbc42</version>
+      </dependency>
+
+      <!-- MySQL -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.37</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
