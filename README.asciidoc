@@ -21,26 +21,25 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as 
 
 Replace `${kind}` with one of the following:
 
+* aspect
+* camel
 * clojure
 * database
 * doxia
 * guice
+* httpclient
 * java
 * javax
+* jexl
+* json
+* juel
 * logging
 * maven
-* plexus
-* sebhoss
-* spring
-* testing
-* wikitext
-* camel
-* paranamer
-* pax
-* aspect
-* jexl
-* juel
 * mvel
 * ognl
-* httpclient
-* json
+* pax
+* paranamer
+* plexus
+* sebhoss
+* testing
+* wikitext

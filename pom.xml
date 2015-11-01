@@ -55,28 +55,28 @@
   <!--                                 MODULES                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <modules>
-    <module>java-bom</module>
-    <module>clojure-bom</module>
-    <module>javax-bom</module>
-    <module>sebhoss-bom</module>
-    <module>testing-bom</module>
-    <module>database-bom</module>
-    <module>guice-bom</module>
-    <module>doxia-bom</module>
-    <module>wikitext-bom</module>
-    <module>plexus-bom</module>
-    <module>logging-bom</module>
-    <module>camel-bom</module>
-    <module>paranamer-bom</module>
-    <module>pax-bom</module>
     <module>aspect-bom</module>
+    <module>camel-bom</module>
+    <module>clojure-bom</module>
+    <module>database-bom</module>
+    <module>doxia-bom</module>
+    <module>guice-bom</module>
+    <module>httpclient-bom</module>
+    <module>java-bom</module>
+    <module>javax-bom</module>
     <module>jexl-bom</module>
+    <module>json-bom</module>
     <module>juel-bom</module>
+    <module>logging-bom</module>
+    <module>maven-bom</module>
     <module>mvel-bom</module>
     <module>ognl-bom</module>
-    <module>httpclient-bom</module>
-    <module>json-bom</module>
-    <module>maven-bom</module>
+    <module>paranamer-bom</module>
+    <module>pax-bom</module>
+    <module>plexus-bom</module>
+    <module>sebhoss-bom</module>
+    <module>testing-bom</module>
+    <module>wikitext-bom</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
