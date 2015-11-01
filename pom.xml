@@ -44,7 +44,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <groupId>com.github.sebhoss.bom</groupId>
   <artifactId>maven-boms</artifactId>
-  <version>2015.11.01</version>
+  <version>2015.11.02-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2013</inceptionYear>
   <url>http://github.com/sebhoss/maven-boms</url>
