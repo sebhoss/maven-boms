@@ -77,6 +77,9 @@
     <module>sebhoss-bom</module>
     <module>testing-bom</module>
     <module>wikitext-bom</module>
+
+    <!-- includes all modules declared above -->
+    <module>auto-managed</module>
   </modules>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
