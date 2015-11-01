@@ -5,7 +5,7 @@
 Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as follows:
 
 [source,xml]
----
+----
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -17,7 +17,7 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Use it as 
     </dependency>
   </dependencies>
 </dependencyManagement>
----
+----
 
 Replace `${kind}` with one of the following:
 
