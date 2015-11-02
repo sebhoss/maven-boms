@@ -5,10 +5,11 @@ image:https://img.shields.io/travis/sebhoss/maven-boms/master.svg?style=flat-squ
 image:https://www.openhub.net/p/maven-bom/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-bom/"]
 image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/sebhoss/maven-boms"]
 
-Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all managed dependencies like this:
+Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all managed dependencies either by importing the `auto-managed` modules as a dependency or by declaring it as your parent like this:
 
 [source,xml]
 ----
+<!-- Typical way to work with BOMs -->
 <dependencyManagement>
   <dependencies>
     <dependency>
@@ -20,6 +21,13 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all
     </dependency>
   </dependencies>
 </dependencyManagement>
+
+<!-- a little shorter as parent -->
+<parent>
+  <groupId>com.github.sebhoss.bom</groupId>
+  <artifactId>auto-managed</artifactId>
+  <version>${version.bom}</version>
+</parent>
 ----
 
 Or import only a specific kind(s) of BOM(s) into your project like this:
@@ -28,6 +36,7 @@ Or import only a specific kind(s) of BOM(s) into your project like this:
 ----
 <dependencyManagement>
   <dependencies>
+    <!-- Duplicate this entry for every 'kind' to import -->
     <dependency>
       <groupId>com.github.sebhoss.bom</groupId>
       <artifactId>${kind}-bom</artifactId>
@@ -35,6 +44,7 @@ Or import only a specific kind(s) of BOM(s) into your project like this:
       <type>pom</type>
       <scope>import</scope>
     </dependency>
+    <!-- Duplicate ends here -->
   </dependencies>
 </dependencyManagement>
 ----
