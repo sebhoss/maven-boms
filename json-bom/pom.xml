@@ -50,6 +50,9 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.json-simple>1.1.1</version.json-simple>
+    <version.genson>1.3</version.genson>
+    <version.gson>2.4</version.gson>
+    <version.logansquare>1.1.0</version.logansquare>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -57,10 +60,36 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <dependencyManagement>
     <dependencies>
+      <!-- JSON.simple -->
+      <!-- https://github.com/fangyidong/json-simple -->
       <dependency>
         <groupId>com.googlecode.json-simple</groupId>
         <artifactId>json-simple</artifactId>
         <version>${version.json-simple}</version>
+      </dependency>
+
+      <!-- Genson -->
+      <!-- http://owlike.github.io/genson/ -->
+      <dependency>
+        <groupId>com.owlike</groupId>
+        <artifactId>genson</artifactId>
+        <version>${version.genson}</version>
+      </dependency>
+
+      <!-- Gson -->
+      <!-- https://github.com/google/gson -->
+      <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>${version.gson}</version>
+      </dependency>
+
+      <!-- LoganSquare -->
+      <!-- https://github.com/bluelinelabs/LoganSquare -->
+      <dependency>
+        <groupId>com.bluelinelabs</groupId>
+        <artifactId>logansquare</artifactId>
+        <version>${version.logansquare}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
