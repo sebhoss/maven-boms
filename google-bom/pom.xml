@@ -53,6 +53,7 @@
     <version.guava>18.0</version.guava>
     <version.guice>4.0</version.guice>
     <version.truth>0.27</version.truth>
+    <version.api>1.20.0</version.api>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -136,6 +137,23 @@
         <groupId>com.google.truth</groupId>
         <artifactId>truth</artifactId>
         <version>${version.truth}</version>
+      </dependency>
+
+      <!-- API -->
+      <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>${version.api}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.oauth-client</groupId>
+        <artifactId>google-oauth-client</artifactId>
+        <version>${version.api}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client</artifactId>
+        <version>${version.api}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
