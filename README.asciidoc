@@ -22,7 +22,7 @@ Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all
   </dependencies>
 </dependencyManagement>
 
-<!-- a little shorter as parent -->
+<!-- a little shorter as a parent -->
 <parent>
   <groupId>com.github.sebhoss.bom</groupId>
   <artifactId>auto-managed</artifactId>
@@ -56,6 +56,15 @@ Possible values for `${kind}` and the dependencies they manage is as follows:
 * https://github.com/sebhoss/maven-boms/blob/master/aspect-bom/pom.xml[aspect]
 ** _aopalliance:aopalliance_
 ** _org.aspectj:aspectjweaver_
+* https://github.com/sebhoss/maven-boms/blob/master/bytecode-bom/pom.xml[bytecode]
+** _org.ow2.asm:asm_
+** _net.bytebuddy:byte-buddy_
+** _org.jboss.byteman:byteman_
+** _org.jboss.byteman:byteman-dtest_
+** _org.jboss.byteman:byteman-bmunit_
+** _org.jboss.byteman:byteman-install_
+** _org.jboss.byteman:byteman-submit_
+** _org.javassist:javassist_
 * https://github.com/sebhoss/maven-boms/blob/master/camel-bom/pom.xml[camel]
 ** _org.apache.camel:camel-core_
 ** _org.apache.camel:camel-context_
