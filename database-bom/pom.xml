@@ -50,7 +50,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.h2>1.4.190</version.h2>
-    <version.postgres>9.4-1204-jdbc42</version.postgres>
+    <version.postgres>9.4-1205-jdbc42</version.postgres>
     <version.mysql>5.1.37</version.mysql>
   </properties>
 
