@@ -12,13 +12,13 @@ help:
 	@echo "   6. make release                    - perform the next release"
 
 display-dependency-updates:
-	@mvn versions:display-dependency-updates
+	@mvn versions:display-dependency-updates -U
 
 display-plugin-updates:
-	@mvn versions:display-plugin-updates
+	@mvn versions:display-plugin-updates -U
 
 display-property-updates:
-	@mvn versions:display-property-updates
+	@mvn versions:display-property-updates -U
 
 sonar-analysis:
 	# http://docs.sonarqube.org/display/SONAR/Analyzing+with+Maven
