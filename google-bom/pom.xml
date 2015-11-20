@@ -53,7 +53,7 @@
     <version.guava>18.0</version.guava>
     <version.guice>4.0</version.guice>
     <version.truth>0.27</version.truth>
-    <version.api>1.20.0</version.api>
+    <version.api>1.21.0</version.api>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
