@@ -50,7 +50,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.spring>4.2.3.RELEASE</version.spring>
-    <version.spring.integration>4.2.1.RELEASE</version.spring.integration>
+    <version.spring.integration>4.2.2.RELEASE</version.spring.integration>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
