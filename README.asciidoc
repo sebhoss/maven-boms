@@ -133,6 +133,7 @@ Possible values for `${kind}` and the dependencies they manage is as follows:
 * https://github.com/sebhoss/maven-boms/blob/master/maven-bom/pom.xml[maven]
 ** _org.apache.maven:maven-core_
 ** _org.apache.maven:maven-model_
+** _org.apache.maven:maven-plugin-api_
 ** _org.apache.maven.plugin-tools:maven-plugin-annotations_
 ** _org.codehaus.plexus:plexus-component-annotations_
 ** _org.apache.maven.doxia:doxia-core_
