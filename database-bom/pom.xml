@@ -51,7 +51,7 @@
   <properties>
     <version.h2>1.4.190</version.h2>
     <version.postgres>9.4-1207</version.postgres>
-    <version.mysql>5.1.37</version.mysql>
+    <version.mysql>5.1.38</version.mysql>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
