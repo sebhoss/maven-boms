@@ -52,7 +52,7 @@
     <version.auto-value>1.1</version.auto-value>
     <version.guava>19.0</version.guava>
     <version.guice>4.0</version.guice>
-    <version.truth>0.27</version.truth>
+    <version.truth>0.28</version.truth>
     <version.api>1.21.0</version.api>
   </properties>
 
