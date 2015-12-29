@@ -50,6 +50,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.okhttp>2.5.0</version.okhttp>
+    <version.javapoet>1.4.0</version.javapoet>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -96,6 +97,12 @@
         <groupId>com.squareup.okhttp</groupId>
         <artifactId>okcurl</artifactId>
         <version>${version.okhttp}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.squareup</groupId>
+        <artifactId>javapoet</artifactId>
+        <version>${version.javapoet}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
