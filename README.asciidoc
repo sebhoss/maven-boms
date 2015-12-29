@@ -176,6 +176,7 @@ Possible values for `${kind}` and the dependencies they manage is as follows:
 ** _com.squareup.okhttp:okhttp-ws_
 ** _com.squareup.okhttp:okhttp-testing-support_
 ** _com.squareup.okhttp:okcurl_
+** _com.squareup:javapoet_
 * https://github.com/sebhoss/maven-boms/blob/master/testing-bom/pom.xml[testing]
 ** _junit:junit_
 ** _org.hamcrest:hamcrest-all_
