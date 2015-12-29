@@ -52,7 +52,7 @@
     <version.clojure>1.7.0</version.clojure>
     <version.tools.nrepl>0.2.12</version.tools.nrepl>
     <version.tools.namespace>0.2.11</version.tools.namespace>
-    <version.java.classpath>0.2.2</version.java.classpath>
+    <version.java.classpath>0.2.3</version.java.classpath>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
