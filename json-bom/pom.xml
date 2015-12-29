@@ -51,7 +51,7 @@
   <properties>
     <version.json-simple>1.1.1</version.json-simple>
     <version.genson>1.3</version.genson>
-    <version.gson>2.4</version.gson>
+    <version.gson>2.5</version.gson>
     <version.logansquare>1.1.0</version.logansquare>
   </properties>
 
