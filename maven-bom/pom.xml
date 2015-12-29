@@ -51,6 +51,7 @@
   <properties>
     <version.maven>3.3.9</version.maven>
     <version.maven-annotations>3.4</version.maven-annotations>
+    <version.maven-annotations>3.4</version.maven-annotations>
     <version.plexus-annotations>1.6</version.plexus-annotations>
     <version.doxia>1.6</version.doxia>
   </properties>
@@ -69,6 +70,11 @@
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-model</artifactId>
+        <version>${version.maven}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
         <version>${version.maven}</version>
       </dependency>
       <dependency>
