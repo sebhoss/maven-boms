@@ -1,8 +1,8 @@
 = Maven BOM
 
 image:https://img.shields.io/maven-central/v/com.github.sebhoss.bom/maven-boms.svg?style=flat-square["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.sebhoss.bom/maven-boms"]
-image:https://img.shields.io/travis/sebhoss/maven-boms/master.svg?style=flat-square["Build Status", link="http://travis-ci.org/sebhoss/maven-boms"]
 image:https://www.openhub.net/p/maven-bom/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-bom/"]
+image:https://img.shields.io/travis/sebhoss/maven-boms/master.svg?style=flat-square["Build Status", link="http://travis-ci.org/sebhoss/maven-boms"]
 image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/sebhoss/maven-boms"]
 
 Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all managed dependencies either by importing the `auto-managed` modules as a dependency or by declaring it as your parent like this:
