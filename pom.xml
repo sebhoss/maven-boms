@@ -88,4 +88,20 @@
     <tag>master</tag>
     <url>${project.url}</url>
   </scm>
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                   BUILD                                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.6</version>
+        <configuration>
+          <executable>/usr/local/bin/gpg2</executable>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
