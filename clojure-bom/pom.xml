@@ -36,7 +36,7 @@
   <parent>
     <groupId>com.github.sebhoss.bom</groupId>
     <artifactId>maven-boms</artifactId>
-    <version>2015.11.23-SNAPSHOT</version>
+    <version>2016.01.03</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
