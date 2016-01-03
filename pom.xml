@@ -99,7 +99,7 @@
         <artifactId>maven-gpg-plugin</artifactId>
         <version>1.6</version>
         <configuration>
-          <executable>/usr/local/bin/gpg2</executable>
+          <executable>gpg2</executable>
         </configuration>
       </plugin>
     </plugins>
