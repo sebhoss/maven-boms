@@ -47,7 +47,7 @@
   <version>2016.01.18-SNAPSHOT</version>
   <packaging>pom</packaging>
   <inceptionYear>2013</inceptionYear>
-  <url>http://github.com/sebhoss/maven-boms</url>
+  <url>https://github.com/sebhoss/maven-boms</url>
   <name>Maven BOMs</name>
   <description>Bill of material for all Maven-based projects</description>
 
