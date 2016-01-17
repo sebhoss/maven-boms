@@ -31,4 +31,4 @@ sign-waiver:
 release:
 	@mvn versions:set -DnewVersion=`(date +%Y.%m.%d)`-SNAPSHOT
 	@mvn versions:commit
-	@mvn -B release:prepare release:perform
+	@mvn -B release:prepare release:perform -DdevelopmentVersion=0.0.0-SNAPSHOT
