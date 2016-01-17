@@ -50,7 +50,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <properties>
     <version.okhttp>2.7.2</version.okhttp>
-    <version.javapoet>1.4.0</version.javapoet>
+    <version.javapoet>1.5.1</version.javapoet>
   </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
