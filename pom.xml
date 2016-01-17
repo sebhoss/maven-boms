@@ -90,4 +90,20 @@
     <url>${project.url}</url>
   </scm>
 
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                                   BUILD                                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <build>
+    <plugins>
+      <plugin>
+      <groupId>com.versioneye</groupId>
+      <artifactId>versioneye-maven-plugin</artifactId>
+      <version>3.5.1</version>
+      <configuration>
+        <projectId>569c06a9ec6e6a000a14b5e4</projectId>
+        <updatePropertiesAfterCreate>false</updatePropertiesAfterCreate>
+      </configuration>
+    </plugin>
+    </plugins>
+  </build>
 </project>
