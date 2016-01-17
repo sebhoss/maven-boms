@@ -194,3 +194,5 @@ Possible values for `${kind}` and the dependencies they manage is as follows:
 ** _org.fusesource.wikitext:tracwiki-core_
 ** _org.fusesource.wikitext:mediawiki-core_
 ** _org.fusesource.wikitext:confluence-core_
+* https://github.com/sebhoss/maven-boms/blob/master/yaml-bom/pom.xml[yaml]
+** _org.yaml:snakeyaml_

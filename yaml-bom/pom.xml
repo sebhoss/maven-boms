@@ -34,75 +34,35 @@
   <!--                                 PARENT                                  -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <parent>
-    <groupId>com.github.sebhoss</groupId>
-    <artifactId>superpom</artifactId>
-    <version>3.0.1</version>
+    <groupId>com.github.sebhoss.bom</groupId>
+    <artifactId>maven-boms</artifactId>
+    <version>2016.01.18-SNAPSHOT</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <groupId>com.github.sebhoss.bom</groupId>
-  <artifactId>maven-boms</artifactId>
-  <version>0.0.0-SNAPSHOT</version>
+  <artifactId>yaml-bom</artifactId>
   <packaging>pom</packaging>
-  <inceptionYear>2013</inceptionYear>
-  <url>http://github.com/sebhoss/maven-boms</url>
-  <name>Maven BOMs</name>
-  <description>Bill of material for all Maven-based projects</description>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                 MODULES                                 -->
+  <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <modules>
-    <module>aspect-bom</module>
-    <module>bytecode-bom</module>
-    <module>camel-bom</module>
-    <module>clojure-bom</module>
-    <module>database-bom</module>
-    <module>google-bom</module>
-    <module>httpclient-bom</module>
-    <module>java-bom</module>
-    <module>javax-bom</module>
-    <module>json-bom</module>
-    <module>logging-bom</module>
-    <module>maven-bom</module>
-    <module>paranamer-bom</module>
-    <module>pax-bom</module>
-    <module>scripting-bom</module>
-    <module>sebhoss-bom</module>
-    <module>square-bom</module>
-    <module>testing-bom</module>
-    <module>wikitext-bom</module>
-    <module>yaml-bom</module>
-
-    <!-- includes all modules declared above -->
-    <module>auto-managed</module>
-  </modules>
+  <properties>
+    <version.snakeyaml>1.16</version.snakeyaml>
+  </properties>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                  SOURCE                                 -->
+  <!--                               DEPENDENCIES                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <scm>
-    <connection>scm:git:git://github.com/sebhoss/maven-boms.git</connection>
-    <developerConnection>scm:git:git@github.com:sebhoss/maven-boms.git</developerConnection>
-    <tag>master</tag>
-    <url>${project.url}</url>
-  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>${version.snakeyaml}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                   BUILD                                 -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.6</version>
-        <configuration>
-          <executable>gpg2</executable>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
