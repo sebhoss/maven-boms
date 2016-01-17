@@ -11,6 +11,9 @@ cache:
   directories:
   - $HOME/.m2
 
+after_success:
+- mvn versioneye:update -DapiKey=$versioneye_api_key
+
 # see http://docs.travis-ci.com/user/notifications/
 notifications:
   webhooks:
@@ -19,3 +22,10 @@ notifications:
     on_success: always  # options: [always|never|change] default: always
     on_failure: always  # options: [always|never|change] default: always
     on_start: never     # options: [always|never|change] default: always
+
+# see https://docs.travis-ci.com/user/encryption-keys/
+# see https://docs.travis-ci.com/user/environment-variables/
+env:
+  global:
+    # exposes 'versioneye_api_key'
+    secure: KCMtMzeBnSd5RqAQrHoO/DsDyATfGoupPS/u3hWX9plnCXnl/YtuJ+zJU0gj73h7Duv3r+qc/Az+W87Ebo6axwk/Ia8J7NT4gIoaAFg6sr+11ZZ+3WWrJrSg7ODkb87cQhS+gF6jRyQtVOXvkC+LE6NyuJFgwzLnyTECRzfjxgg=
