@@ -9,7 +9,8 @@ image:https://img.shields.io/maven-central/v/{project-group}/{project-name}.svg?
 image:https://www.openhub.net/p/maven-bom/widgets/project_thin_badge.gif["Open Hub stats", link="https://www.openhub.net/p/maven-bom/"]
 image:https://img.shields.io/travis/{github-org}/{project-name}/master.svg?style=flat-square["Build Status", link="https://travis-ci.org/{github-org}/{project-name}"]
 image:https://www.versioneye.com/user/projects/{versioneye-project}/badge.svg?style=flat["Dependency Status", link="https://www.versioneye.com/user/projects/{versioneye-project}"]
-image:https://badges.gitter.im/Join%20Chat.svg["Gitter", link="https://gitter.im/{github-org}/{project-name}"]
+image:https://img.shields.io/gitter/room/{github-org}/{project-name}.svg["Gitter", link="https://gitter.im/{github-org}/{project-name}"]
+
 
 Bill of materials for http://maven.apache.org/[Maven]-based projects. Import all managed dependencies either by importing the `auto-managed` modules as a dependency or by declaring it as your parent like this:
 
