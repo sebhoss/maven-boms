@@ -98,7 +98,7 @@
       <plugin>
       <groupId>com.versioneye</groupId>
       <artifactId>versioneye-maven-plugin</artifactId>
-      <version>3.5.1</version>
+      <version>3.6.0</version>
       <configuration>
         <projectId>569c06a9ec6e6a000a14b5e4</projectId>
         <updatePropertiesAfterCreate>false</updatePropertiesAfterCreate>
